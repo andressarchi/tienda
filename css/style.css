@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Roboto:wght@500&display=swap');
+
+body{
+    background-color: black;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Open Sans';
+}
+header{
+    background-image: url(/images/header2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    margin-bottom: 100px;
+    border: 10px double white;
+}
+header h1 {
+    text-align: center;
+    font-size: 75px;
+    color: rgb(255, 255, 255);
+    padding: 100px 0;
+}
+.contenedor{
+    max-width: 1200px;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    contain: paint;
+}
+.contenedor .wrapper{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    grid-gap: 30px;
+    grid-row-gap: 30px;
+    width: 100%;
+    transition: .3s;
+}
+.contenedor .wrapper .card{
+    max-width: 200px;
+    padding: 10px;
+    margin: auto;
+    border: 1px solid #666;
+    border-radius: 10px;
+    padding: 20px;
+    transition: .3s;
+}
+.wrapper .card:hover{
+    box-shadow: 0px 0px 20px 20px #fffefe;
+    scale: 1.05;
+}
+.wrapper .card .card-image{
+    width: 100%;
+}
+.card{
+    background-color: white;
+}
+.wrapper .card .card-titulo{
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+.wrapper .card .precio-card{
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+}
