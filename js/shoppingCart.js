@@ -1,45 +1,28 @@
-// Array para almacenar los elementos del carrito
-var cartItems = [];
-
-// Función para agregar un elemento al carrito
-function addToCart(itemName, itemPrice) {
-    // Verificar si el elemento ya está en el carrito
-    var existingItem = cartItems.find(function(item) {
-        return item.name === itemName;
-    });
-
-    if (existingItem) {
-        existingItem.quantity++;
-    } else {
-        var newItem = {
-            name: itemName,
-            price: itemPrice,
-            quantity: 1
-        };
-        cartItems.push(newItem);
-    }
-
-    // Actualizar la visualización del carrito
-    updateCart();
+function increaseQuantity(elementId) {
+    const quantityElement = document.getElementById(elementId);
+    let quantity = parseInt(quantityElement.textContent);
+    quantity++;
+    quantityElement.textContent = quantity;
 }
 
-// Función para actualizar la visualización del carrito
-function updateCart() {
-    var cartItemsList = document.getElementById('cart-items');
-    var cartTotal = document.getElementById('cart-total');
-    var total = 0;
+function decreaseQuantity(elementId) {
+    const quantityElement = document.getElementById(elementId);
+    let quantity = parseInt(quantityElement.textContent);
+    if (quantity > 0) {
+        quantity--;
+        quantityElement.textContent = quantity;
+    }
+}
 
-    // Limpiar la lista de elementos del carrito
-    cartItemsList.innerHTML = '';
+function addToCart(productName, productPrice, quantityElementId) {
+    const quantityElement = document.getElementById(quantityElementId);
+    const quantity = parseInt(quantityElement.textContent);
+    const totalPrice = productPrice * quantity;
 
-    // Agregar los elementos del carrito a la lista
-    cartItems.forEach(function(item) {
-        var li = document.createElement('li');
-        li.textContent = item.name + ' x ' + item.quantity;
-        cartItemsList.appendChild(li);
-        total += item.price * item.quantity;
-    });
+    // Aquí puedes realizar la lógica para agregar el producto al carrito de compras
+    // Puedes utilizar la variable 'productName' para obtener el nombre del producto
+    // y la variable 'totalPrice' para obtener el precio total (precio del producto * cantidad)
 
-    // Actualizar el precio total del carrito
-    cartTotal.textContent = 'Total: $' + total;
+    // Por ahora, simplemente mostraremos una alerta con la información del producto agregado
+    alert(`Producto: ${productName}\nCantidad: ${quantity}\nPrecio Total: $${totalPrice}`);
 }
