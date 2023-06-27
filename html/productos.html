@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TIENDA</title>
     <link rel="stylesheet" href="/css/style.css">
+  
 </head>
 <body>
     <header>
         <div>
-            <h1>Tienda de Tecnologia </h1>
+            <h1>Tienda de Tecnología</h1>
             <nav>
                 <ul>
-                    <li><a href="teclados.html" ><i>TECLADOS</i></a></li>
-                    <li><a href="audifonos.html" ><i>AUDIFONOS</i></a></li>
-                    <li><a href="mause.html" ><i>MOUSE</i></a></li>
-                    <li><a href="microfono.html" ><i>MICRÓFONO</i></a></li>
+                    <li><a href="teclados.html"><i>TECLADOS</i></a></li>
+                    <li><a href="audifonos.html"><i>AUDIFONOS</i></a></li>
+                    <li><a href="mause.html"><i>MOUSE</i></a></li>
+                    <li><a href="microfono.html"><i>MICRÓFONO</i></a></li>
                 </ul>
             </nav>
         </div>
@@ -26,61 +27,129 @@
                 <span class="card-titulo">DIADEMA ASTRO A10 2nd Gen</span>
                 <img src="/images/DIADEMA ASTRO A10 2nd Gen.png" alt="" class="card-image">
                 <span class="precio-card">$215.000</span>
-                <button class="boton-card">agregar al carrito</button>
+                <div>
+                    <button class="disminuir-cantidad" onclick="decreaseQuantity('cantidad1')">-</button>
+                    <span id="cantidad1" class="cantidad">0</span>
+                    <button class="aumentar-cantidad" onclick="increaseQuantity('cantidad1')">+</button>
+                    <button class="boton-card" onclick="addToCart('DIADEMA ASTRO A10 2nd Gen', 215000, 'cantidad1')">Agregar al carrito</button>
+                </div>
             </div>
+            
             <div class="card">
                 <span class="card-titulo">Diademas VSG Enigma</span>
                 <img src="/images/Diademas VSG Enigma.webp" alt="" class="card-image">
                 <span class="precio-card">$115.000</span>
-                <button class="boton-card">agregar al carrito</button>
+                <div>
+                    <button class="disminuir-cantidad" onclick="decreaseQuantity('cantidad2')">-</button>
+                    <span id="cantidad2" class="cantidad">0</span>
+                    <button class="aumentar-cantidad" onclick="increaseQuantity('cantidad2')">+</button>
+                    <button class="boton-card" onclick="addToCart('Diademas VSG Enigma', 115000, 'cantidad2')">Agregar al carrito</button>
+                </div>
             </div>
+            
             <div class="card">
                 <span class="card-titulo">MICRÓFONO FANTECH LEVIOSA MCX01</span>
                 <img src="/images/MICRÓFONO FANTECH LEVIOSA MCX01.webp" alt="" class="card-image">
                 <span class="precio-card">$345.000</span>
-                <button class="boton-card">agregar al carrito</button>
+                <div>
+                    <button class="disminuir-cantidad" onclick="decreaseQuantity('cantidad3')">-</button>
+                    <span id="cantidad3" class="cantidad">0</span>
+                    <button class="aumentar-cantidad" onclick="increaseQuantity('cantidad3')">+</button>
+                    <button class="boton-card" onclick="addToCart('MICRÓFONO FANTECH LEVIOSA MCX01', 345000, 'cantidad3')">Agregar al carrito</button>
+                </div>
             </div>
+            
             <div class="card">
                 <span class="card-titulo">MICRÓFONO VSG OMKARA</span>
                 <img src="/images/MICRÓFONO VSG OMKARA.png" alt="" class="card-image">
                 <span class="precio-card">$205.000</span>
-                <button class="boton-card">agregar al carrito</button>
+                <div>
+                    <button class="disminuir-cantidad" onclick="decreaseQuantity('cantidad4')">-</button>
+                    <span id="cantidad4" class="cantidad">0</span>
+                    <button class="aumentar-cantidad" onclick="increaseQuantity('cantidad4')">+</button>
+                    <button class="boton-card" onclick="addToCart('MICRÓFONO VSG OMKARA', 205000, 'cantidad4')">Agregar al carrito</button>
+                </div>
             </div>
+            
             <div class="card">
                 <span class="card-titulo">DRAGONBORN</span>
                 <img src="/images/DRAGONBORN.png" alt="" class="card-image">
                 <span class="precio-card">$500.000</span>
-                <button class="boton-card">agregar al carrito</button>
+                <div>
+                    <button class="disminuir-cantidad" onclick="decreaseQuantity('cantidad5')">-</button>
+                    <span id="cantidad5" class="cantidad">0</span>
+                    <button class="aumentar-cantidad" onclick="increaseQuantity('cantidad5')">+</button>
+                    <button class="boton-card" onclick="addToCart('DRAGONBORN', 500000, 'cantidad5')">Agregar al carrito</button>
+                </div>
             </div>
+            
             <div class="card">
                 <span class="card-titulo">TECLADO MECÁNICO FANTECH MAXPOWER MK853</span>
                 <img src="/images/TECLADO MECÁNICO FANTECH MAXPOWER MK853.png" alt="" class="card-image">
                 <span class="precio-card">$400.000</span>
-                <button class="boton-card">agregar al carrito</button>
+                <div>
+                    <button class="disminuir-cantidad" onclick="decreaseQuantity('cantidad6')">-</button>
+                    <span id="cantidad6" class="cantidad">0</span>
+                    <button class="aumentar-cantidad" onclick="increaseQuantity('cantidad6')">+</button>
+                    <button class="boton-card" onclick="addToCart('TECLADO MECÁNICO FANTECH MAXPOWER MK853', 400000, 'cantidad6')">Agregar al carrito</button>
+                </div>
             </div>
+            
             <div class="card">
                 <span class="card-titulo">MOUSE GAMING FANTECH CRYPTO VX7</span>
                 <img src="/images/MOUSE GAMING FANTECH CRYPTO VX7.jpg" alt="" class="card-image">
                 <span class="precio-card">$200.000</span>
-                <button class="boton-card">agregar al carrito</button>
+                <div>
+                    <button class="disminuir-cantidad" onclick="decreaseQuantity('cantidad7')">-</button>
+                    <span id="cantidad7" class="cantidad">0</span>
+                    <button class="aumentar-cantidad" onclick="increaseQuantity('cantidad7')">+</button>
+                    <button class="boton-card" onclick="addToCart('MOUSE GAMING FANTECH CRYPTO VX7', 200000, 'cantidad7')">Agregar al carrito</button>
+                </div>
             </div>
+            
             <div class="card">
                 <span class="card-titulo">MOUSE VSG AQUILA AIR</span>
                 <img src="/images/MOUSE VSG AQUILA AIR.jpg" alt="" class="card-image">
                 <span class="precio-card">$220.000</span>
-                <button class="boton-card">agregar al carrito</button>
+                <div>
+                    <button class="disminuir-cantidad" onclick="decreaseQuantity('cantidad8')">-</button>
+                    <span id="cantidad8" class="cantidad">0</span>
+                    <button class="aumentar-cantidad" onclick="increaseQuantity('cantidad8')">+</button>
+                    <button class="boton-card" onclick="addToCart('MOUSE VSG AQUILA AIR', 220000, 'cantidad8')">Agregar al carrito</button>
+                </div>
             </div>
         </div>
-        
-        <div class="carrito">
-            <h2>Carrito de compras</h2>
-            <ul id="lista-carrito"></ul>
-            <p>Total: <span id="total-carrito">$0.00</span></p>
-            <p>Productos en el carrito: <span id="contador-carrito">0</span></p>
-            <button id="vaciar-carrito">Vaciar carrito</button>
-        </div>
-    </div>
     </section>
-    <script src="/js/carito.js"></script>
+
+    <script>
+        function increaseQuantity(elementId) {
+            const quantityElement = document.getElementById(elementId);
+            let quantity = parseInt(quantityElement.textContent);
+            quantity++;
+            quantityElement.textContent = quantity;
+        }
+        
+        function decreaseQuantity(elementId) {
+            const quantityElement = document.getElementById(elementId);
+            let quantity = parseInt(quantityElement.textContent);
+            if (quantity > 0) {
+                quantity--;
+                quantityElement.textContent = quantity;
+            }
+        }
+        
+        function addToCart(productName, productPrice, quantityElementId) {
+            const quantityElement = document.getElementById(quantityElementId);
+            const quantity = parseInt(quantityElement.textContent);
+            const totalPrice = productPrice * quantity;
+            
+            // Aquí puedes realizar la lógica para agregar el producto al carrito de compras
+            // Puedes utilizar la variable 'productName' para obtener el nombre del producto
+            // y la variable 'totalPrice' para obtener el precio total (precio del producto * cantidad)
+            
+            // Por ahora, simplemente mostraremos una alerta con la información del producto agregado
+            alert(`Producto: ${productName}\nCantidad: ${quantity}\nPrecio Total: $${totalPrice}`);
+        }
+    </script>
 </body>
 </html>

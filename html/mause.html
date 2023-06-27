@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mouse</title>
+    <title>Mouse</title>
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
     <header>
         <div>
-            <h1>Tienda de Tecnologia </h1>
+            <h1>Tienda de Tecnología</h1>
             <nav>
                 <ul>
-                    <li><a href="teclados.html" ><i>TECLADOS</i></a></li>
-                    <li><a href="audifonos.html" ><i>AUDIFONOS</i></a></li>
-                    <li><a href="microfono.html" ><i>MICRÓFONO</i></a></li>
-                    <li><a href="productos.html" ><i>INICIO</i></a></li>
+                    <li><a href="teclados.html"><i>TECLADOS</i></a></li>
+                    <li><a href="audifonos.html"><i>AUDÍFONOS</i></a></li>
+                    <li><a href="microfono.html"><i>MICRÓFONO</i></a></li>
+                    <li><a href="productos.html"><i>INICIO</i></a></li>
                 </ul>
             </nav>
         </div>
@@ -26,23 +26,27 @@
                 <span class="card-titulo">MOUSE GAMING FANTECH CRYPTO VX7</span>
                 <img src="/images/MOUSE GAMING FANTECH CRYPTO VX7.jpg" alt="" class="card-image">
                 <span class="precio-card">$200.000</span>
-                <button class="boton-card">agregar al carrito</button>
+                <div>
+                    <button class="disminuir-cantidad" onclick="decreaseQuantity('cantidad7')">-</button>
+                    <span id="cantidad7" class="cantidad">0</span>
+                    <button class="aumentar-cantidad" onclick="increaseQuantity('cantidad7')">+</button>
+                    <button class="boton-card" onclick="addToCart('MOUSE GAMING FANTECH CRYPTO VX7', 200000, 'cantidad7')">Agregar al carrito</button>
+                </div>
             </div>
+            
             <div class="card">
                 <span class="card-titulo">MOUSE VSG AQUILA AIR</span>
                 <img src="/images/MOUSE VSG AQUILA AIR.jpg" alt="" class="card-image">
                 <span class="precio-card">$220.000</span>
-                <button class="boton-card">agregar al carrito</button>
+                <div>
+                    <button class="disminuir-cantidad" onclick="decreaseQuantity('cantidad8')">-</button>
+                    <span id="cantidad8" class="cantidad">0</span>
+                    <button class="aumentar-cantidad" onclick="increaseQuantity('cantidad8')">+</button>
+                    <button class="boton-card" onclick="addToCart('MOUSE VSG AQUILA AIR', 220000, 'cantidad8')">Agregar al carrito</button>
+                </div>
             </div>
-        </div>
-        <div class="carrito">
-            <h2>Carrito de compras</h2>
-            <ul id="lista-carrito"></ul>
-            <p>Total: <span id="total-carrito">$0.00</span></p>
-            <p>Productos en el carrito: <span id="contador-carrito">0</span></p>
-            <button id="vaciar-carrito">Vaciar carrito</button>
-        </div>
     </section>
-    <script src="/js/carito.js"></script>
+
+    
 </body>
 </html>

@@ -51,10 +51,11 @@ header h1 {
 .contenedor{
     max-width: 1200px;
     padding: 10px;
-    margin: auto;
+    margin: 1px;
     display: flex;
     justify-content: space-between;
     contain: paint;
+    
 }
 .contenedor .wrapper{
     margin-top: 30px;
@@ -68,14 +69,14 @@ header h1 {
 .contenedor .wrapper .card{
     max-width: 200px;
     padding: 10px;
-    margin: auto;
+    margin: 5px;
     border: 1px solid #666;
     border-radius: 10px;
-    padding: 20px;
+    padding: 10px;
     transition: .3s;
 }
 .wrapper .card:hover{
-    box-shadow: 0px 0px 20px 20px #fffefe;
+    box-shadow: 0px 0px 20px 20px #6b6b6b;
     scale: 1.05;
 }
 .wrapper .card .card-image{
@@ -83,6 +84,7 @@ header h1 {
 }
 .card{
     background-color: white;
+    float: right;
 }
 .wrapper .card .card-titulo{
     display: block;
@@ -108,51 +110,9 @@ header h1 {
     font-size: 20px;
 }
 
+.cantidad {
+  display: inline-block;
+  margin-right: 10px;
+}
 
 
-
-.carrito {
-    background-color: #f1f1f1;
-    padding: 20px;
-    margin-top: 20px;
-    float: right;
-    margin-left: 40px;
-  }
-  
-  .carrito h2 {
-    margin-bottom: 10px;
-  }
-  
-  .carrito ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .carrito li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
-  }
-  
-  .carrito input[type="number"] {
-    width: 100px;
-    height: 30px;
-    margin-left: 5px;
-    padding-left: 3px;
-  }
-  
-  .carrito button {
-    background-color: #dc3545;
-    color: #fff;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-    font-size: 20px;
-  }
-  
-  .carrito button:hover {
-    background-color: #c82333;
-  }
-  
-  
